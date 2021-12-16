@@ -59,6 +59,7 @@ class Transaction extends Model
         }
         $day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
         $merchant_name = $merchantId->merchant_name;
+        $merchant_id = $merchantId->id;
         for ($i=1; $i<=30;$i++){
             if(!empty($usermcount[$i])){
             $userArr[$i]['omzet'] = $usermcount[$i];
@@ -69,6 +70,7 @@ class Transaction extends Model
         }
         $userArr[$i]['day']=$day[$i-1];
         $userArr[$i]['merchant_name']=$merchant_name;
+        $userArr[$i]['merchant_id']=$merchant_id;
 
         }
 
@@ -99,7 +101,7 @@ class Transaction extends Model
 
         foreach($transaction as $key =>$value){
            foreach($value as $val){
-                $merchant = $val->merchant_name;
+
                $sum += $val['bill_total'];
 
                $usermcount[(float)$key] = array_sum([$sum]);
