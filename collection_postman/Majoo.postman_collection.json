@@ -106,11 +106,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 16 Dec 2021 06:30:52 GMT"
+							"value": "Thu, 16 Dec 2021 09:34:31 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 16 Dec 2021 06:30:52 GMT"
+							"value": "Thu, 16 Dec 2021 09:34:31 GMT"
 						},
 						{
 							"key": "Connection",
@@ -142,7 +142,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"01\": [\n            {\n                \"id\": 1,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 2000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 2,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 2500,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"02\": [\n            {\n                \"id\": 3,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 4000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 6,\n                \"merchant_id\": 1,\n                \"outlet_id\": 3,\n                \"bill_total\": 2000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"03\": [\n            {\n                \"id\": 7,\n                \"merchant_id\": 1,\n                \"outlet_id\": 3,\n                \"bill_total\": 2500,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"04\": [\n            {\n                \"id\": 4,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 1000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 8,\n                \"merchant_id\": 1,\n                \"outlet_id\": 3,\n                \"bill_total\": 4000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 9,\n                \"merchant_id\": 1,\n                \"outlet_id\": 3,\n                \"bill_total\": 1000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"05\": [\n            {\n                \"id\": 5,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 7000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 10,\n                \"merchant_id\": 1,\n                \"outlet_id\": 3,\n                \"bill_total\": 7000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"1\": {\n            \"omzet\": 4500,\n            \"day\": 1,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"2\": {\n            \"omzet\": 10500,\n            \"day\": 2,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"3\": {\n            \"omzet\": 13000,\n            \"day\": 3,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"4\": {\n            \"omzet\": 19000,\n            \"day\": 4,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"5\": {\n            \"omzet\": 33000,\n            \"day\": 5,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"6\": {\n            \"omzet\": 0,\n            \"day\": 6,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"7\": {\n            \"omzet\": 0,\n            \"day\": 7,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"8\": {\n            \"omzet\": 0,\n            \"day\": 8,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"9\": {\n            \"omzet\": 0,\n            \"day\": 9,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"10\": {\n            \"omzet\": 0,\n            \"day\": 10,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"11\": {\n            \"omzet\": 0,\n            \"day\": 11,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"12\": {\n            \"omzet\": 0,\n            \"day\": 12,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"13\": {\n            \"omzet\": 0,\n            \"day\": 13,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"14\": {\n            \"omzet\": 0,\n            \"day\": 14,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"15\": {\n            \"omzet\": 0,\n            \"day\": 15,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"16\": {\n            \"omzet\": 0,\n            \"day\": 16,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"17\": {\n            \"omzet\": 0,\n            \"day\": 17,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"18\": {\n            \"omzet\": 0,\n            \"day\": 18,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"19\": {\n            \"omzet\": 0,\n            \"day\": 19,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"20\": {\n            \"omzet\": 0,\n            \"day\": 20,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"21\": {\n            \"omzet\": 0,\n            \"day\": 21,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"22\": {\n            \"omzet\": 0,\n            \"day\": 22,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"23\": {\n            \"omzet\": 0,\n            \"day\": 23,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"24\": {\n            \"omzet\": 0,\n            \"day\": 24,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"25\": {\n            \"omzet\": 0,\n            \"day\": 25,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"26\": {\n            \"omzet\": 0,\n            \"day\": 26,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"27\": {\n            \"omzet\": 0,\n            \"day\": 27,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"28\": {\n            \"omzet\": 0,\n            \"day\": 28,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"29\": {\n            \"omzet\": 0,\n            \"day\": 29,\n            \"merchant_name\": \"merchant 1\"\n        },\n        \"30\": {\n            \"omzet\": 0,\n            \"day\": 30,\n            \"merchant_name\": \"merchant 1\"\n        }\n    }\n}"
 				}
 			]
 		},
@@ -436,11 +436,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 16 Dec 2021 06:30:04 GMT"
+							"value": "Thu, 16 Dec 2021 09:31:47 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 16 Dec 2021 06:30:04 GMT"
+							"value": "Thu, 16 Dec 2021 09:31:47 GMT"
 						},
 						{
 							"key": "Connection",
@@ -472,7 +472,289 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"01\": [\n            {\n                \"id\": 1,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 2000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            },\n            {\n                \"id\": 2,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 2500,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"02\": [\n            {\n                \"id\": 3,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 4000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"04\": [\n            {\n                \"id\": 4,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 1000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ],\n        \"05\": [\n            {\n                \"id\": 5,\n                \"merchant_id\": 1,\n                \"outlet_id\": 1,\n                \"bill_total\": 7000,\n                \"merchant\": {\n                    \"id\": 1,\n                    \"user_id\": 1,\n                    \"merchant_name\": \"merchant 1\",\n                    \"user\": {\n                        \"id\": 1,\n                        \"name\": \"Admin 1\",\n                        \"user_name\": \"admin1\"\n                    }\n                }\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"1\": {\n            \"omzet\": 4500,\n            \"day\": 1,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"2\": {\n            \"omzet\": 8500,\n            \"day\": 2,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"3\": {\n            \"omzet\": 0,\n            \"day\": 3,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"4\": {\n            \"omzet\": 9500,\n            \"day\": 4,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"5\": {\n            \"omzet\": 16500,\n            \"day\": 5,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"6\": {\n            \"omzet\": 0,\n            \"day\": 6,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"7\": {\n            \"omzet\": 0,\n            \"day\": 7,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"8\": {\n            \"omzet\": 0,\n            \"day\": 8,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"9\": {\n            \"omzet\": 0,\n            \"day\": 9,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"10\": {\n            \"omzet\": 0,\n            \"day\": 10,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"11\": {\n            \"omzet\": 0,\n            \"day\": 11,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"12\": {\n            \"omzet\": 0,\n            \"day\": 12,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"13\": {\n            \"omzet\": 0,\n            \"day\": 13,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"14\": {\n            \"omzet\": 0,\n            \"day\": 14,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"15\": {\n            \"omzet\": 0,\n            \"day\": 15,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"16\": {\n            \"omzet\": 0,\n            \"day\": 16,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"17\": {\n            \"omzet\": 0,\n            \"day\": 17,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"18\": {\n            \"omzet\": 0,\n            \"day\": 18,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"19\": {\n            \"omzet\": 0,\n            \"day\": 19,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"20\": {\n            \"omzet\": 0,\n            \"day\": 20,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"21\": {\n            \"omzet\": 0,\n            \"day\": 21,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"22\": {\n            \"omzet\": 0,\n            \"day\": 22,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"23\": {\n            \"omzet\": 0,\n            \"day\": 23,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"24\": {\n            \"omzet\": 0,\n            \"day\": 24,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"25\": {\n            \"omzet\": 0,\n            \"day\": 25,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"26\": {\n            \"omzet\": 0,\n            \"day\": 26,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"27\": {\n            \"omzet\": 0,\n            \"day\": 27,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"28\": {\n            \"omzet\": 0,\n            \"day\": 28,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"29\": {\n            \"omzet\": 0,\n            \"day\": 29,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        },\n        \"30\": {\n            \"omzet\": 0,\n            \"day\": 30,\n            \"merchant_name\": \"merchant 1\",\n            \"outlet_name\": [\n                \"Outlet 1\",\n                \"Outlet 2\"\n            ],\n            \"outlet_id\": [\n                1,\n                3\n            ]\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "My Outlet",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/myoutlet",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"myoutlet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/myoutlet",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"myoutlet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Dec 2021 09:42:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Dec 2021 09:42:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Admin 1\",\n        \"user_name\": \"admin1\",\n        \"merchant\": [\n            {\n                \"id\": 1,\n                \"user_id\": 1,\n                \"merchant_name\": \"merchant 1\",\n                \"outlet\": [\n                    {\n                        \"id\": 1,\n                        \"merchant_id\": 1,\n                        \"outlet_name\": \"Outlet 1\"\n                    },\n                    {\n                        \"id\": 3,\n                        \"merchant_id\": 1,\n                        \"outlet_name\": \"Outlet 2\"\n                    }\n                ]\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "My Merchant",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/mymerchant",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"mymerchant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/user/mymerchant",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"mymerchant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Dec 2021 09:43:23 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 16 Dec 2021 09:43:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"success\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Admin 1\",\n        \"user_name\": \"admin1\",\n        \"merchant\": [\n            {\n                \"id\": 1,\n                \"user_id\": 1,\n                \"merchant_name\": \"merchant 1\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		}

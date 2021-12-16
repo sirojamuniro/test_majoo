@@ -22,6 +22,10 @@ class Merchant extends Model
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
+    public function outlet() {
+        return $this->hasMany(Outlet::class, 'merchant_id', 'id');
+    }
+
     public function transaction() {
         return $this->hasMany(Transaction::class,'merchant_id','id');
     }

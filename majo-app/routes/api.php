@@ -28,6 +28,8 @@ Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
 
 Route::group(['middleware' => 'api', 'prefix' => 'user'], function ($router) {
     Route::get('me', [UserController::class, 'me']);
+    Route::get('mymerchant', [UserController::class, 'myMerchant']);
+    Route::get('myoutlet', [UserController::class, 'myOutlet']);
 
 });
 
