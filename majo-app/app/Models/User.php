@@ -1,14 +1,14 @@
 <?php
 
 namespace App\Models;
-
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use HasApiTokens, HasFactory, Notifiable;
 
@@ -17,28 +17,30 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    public $timestamps = false;
 
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
+    protected $table = 'users';
+
+    protected $rememberTokenName = false;
+
+    protected $guarded = ['id'];
+
     protected $hidden = [
         'password',
-        'remember_token',
+        'created_at', 'updated_at','created_by','updated_by'
     ];
 
-    /**
-     * The attributes that should be cast.
-     *
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+
+    public function getJWTIdentifier() {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims() {
+        return [];
+    }
+
+    public function merchant()
+    {
+        return $this->hasMany(Merchant::class, 'user_id', 'id');
+    }
 }
