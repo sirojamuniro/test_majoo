@@ -34,7 +34,7 @@ class Transaction extends Model
         $merchantId= Merchant::where('user_id',$userId)->first();
         $from =new Carbon('first day of November 2021');
         $to = new Carbon('last day of November 2021');
-        $result = $this->select(DB::raw('day(created_at) as day'),'bill_total','merchant_id','id')->with(['merchant.user'])->whereBetween('created_at', [$from, $to])
+        $transaction = $this->with(['merchant.user'])->whereBetween('created_at', [$from, $to])
         ->where('merchant_id',$merchantId->id)
         ->orderBy('created_at')
         ->get()
@@ -42,11 +42,37 @@ class Transaction extends Model
             return Carbon::parse($val->created_at)->format('d');
         });
 
-        // $datas->map(function($data) use($merchantId){
-        //     $data->amount_day = $data->sum('bill_total')->groupBy('day')->get();
-        // });
 
-        return $result;
+        $usermcount = [];
+        $userArr = [];
+        $sum = 0;
+
+        foreach($transaction as $key =>$value){
+           foreach($value as $val){
+
+               $sum += $val['bill_total'];
+
+               $usermcount[(float)$key] = array_sum([$sum]);
+
+           }
+
+        }
+        $day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+        $merchant_name = $merchantId->merchant_name;
+        for ($i=1; $i<=30;$i++){
+            if(!empty($usermcount[$i])){
+            $userArr[$i]['omzet'] = $usermcount[$i];
+
+        }else{
+            $userArr[$i]['omzet'] = 0;
+
+        }
+        $userArr[$i]['day']=$day[$i-1];
+        $userArr[$i]['merchant_name']=$merchant_name;
+
+        }
+
+        return $userArr;
 
     }
 
@@ -68,8 +94,6 @@ class Transaction extends Model
         });
 
         $usermcount = [];
-        $usermerchant =[];
-        $userid =[];
         $userArr = [];
         $sum = 0;
 
@@ -79,11 +103,8 @@ class Transaction extends Model
                $sum += $val['bill_total'];
 
                $usermcount[(float)$key] = array_sum([$sum]);
-               $usermerchant[(string)$key] = $merchant;
-
 
            }
-            // $bill = $value
 
         }
         $day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
