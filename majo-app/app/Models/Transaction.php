@@ -34,7 +34,7 @@ class Transaction extends Model
         $merchantId= Merchant::where('user_id',$userId)->first();
         $from =new Carbon('first day of November 2021');
         $to = new Carbon('last day of November 2021');
-        $result = $this->with(['merchant.user'])->whereBetween('created_at', [$from, $to])
+        $result = $this->select(DB::raw('day(created_at) as day'),'bill_total','merchant_id','id')->with(['merchant.user'])->whereBetween('created_at', [$from, $to])
         ->where('merchant_id',$merchantId->id)
         ->orderBy('created_at')
         ->get()
@@ -56,9 +56,10 @@ class Transaction extends Model
         $merchantId= Merchant::where('user_id',$userId)->first();
         $outlet = Outlet::where('merchant_id',$merchantId->id)->get();
         $outletId = $outlet->pluck('id');
+        $outletName = $outlet->pluck('outlet_name');
         $from =new Carbon('first day of November 2021');
         $to = new Carbon('last day of November 2021');
-        $result = $this->with(['merchant.user'])->whereBetween('created_at', [$from, $to])
+        $transaction = $this->with(['merchant.user'])
         ->whereIn('outlet_id',[$outletId])
         ->orderBy('created_at')
         ->get()
@@ -66,11 +67,45 @@ class Transaction extends Model
             return Carbon::parse($val->created_at)->format('d');
         });
 
-        // $datas->map(function($data) use($merchantId){
-        //     $data->amount_day = $data->sum('bill_total')->groupBy('day')->get();
-        // });
+        $usermcount = [];
+        $usermerchant =[];
+        $userid =[];
+        $userArr = [];
+        $sum = 0;
 
-        return $result;
+        foreach($transaction as $key =>$value){
+           foreach($value as $val){
+                $merchant = $val->merchant_name;
+               $sum += $val['bill_total'];
+
+               $usermcount[(float)$key] = array_sum([$sum]);
+               $usermerchant[(string)$key] = $merchant;
+
+
+           }
+            // $bill = $value
+
+        }
+        $day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+        $merchant_name = $merchantId->merchant_name;
+        $outlet_name = $outletName;
+        $outlet_id = $outletId;
+        for ($i=1; $i<=30;$i++){
+            if(!empty($usermcount[$i])){
+            $userArr[$i]['omzet'] = $usermcount[$i];
+
+        }else{
+            $userArr[$i]['omzet'] = 0;
+
+        }
+        $userArr[$i]['day']=$day[$i-1];
+        $userArr[$i]['merchant_name']=$merchant_name;
+        $userArr[$i]['outlet_name']=$outlet_name;
+        $userArr[$i]['outlet_id']=$outlet_id;
+        }
+
+
+        return $userArr;
 
     }
     public function total_per_day() {
@@ -92,6 +127,17 @@ class Transaction extends Model
         return $result;
 
     }
+    protected function sumArray($array)
+    {
+
+        $sum = array_reduce($array, function($carry, $item)
+        {
+            return (int)$carry + (int)$item->bill_total;
+        });
+
+        return $sum;
+    }
+
 
 
 }
